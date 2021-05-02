@@ -14,15 +14,16 @@ export const buildCard = () => {
     "d-flex",
     "flex-column",
     "justify-content-between",
-    "p-4"
+    "p-3"
   );
   card.style.height = "35em";
-  card.style.width = "20em";
+  card.style.width = "23em";
   card.style.backgroundColor = "white";
   card.style.borderRadius = "1em";
 
   let suitup = document.createElement("div");
   suitup.classList.add("d-flex", "flex-row", "justify-content-start");
+  suitup.style.fontSize = "6rem";
 
   let suitnumber = document.createElement("div");
   suitnumber.classList.add("d-flex", "flex-row", "justify-content-center");
@@ -35,12 +36,13 @@ export const buildCard = () => {
     "justify-content-end",
     "fa-flip-vertical"
   );
+  suitdown.style.fontSize = "6rem";
 
   let suit = [
-    '<span style="font-size: 3rem; color: Tomato;"><i class="fas fa-heart">♥</i></span>',
-    '<span style="font-size: 3rem; color: Tomato;"><i class="fab fa-first-order">♦</i></span>',
-    '<span style="font-size: 3rem; color: black;"><i class="fas fa-spa">♣</i></span>',
-    '<span style="font-size: 3rem; color: black;"><i class="fas fa-tree">♠</i></span>'
+    '<span style="color: Tomato;">♥</span>',
+    '<span style="color: Tomato;">♦</span>',
+    '<span style="color: black;">♣</span>',
+    '<span style="color: black;">♠</span>'
   ];
   let number = [
     "1",
